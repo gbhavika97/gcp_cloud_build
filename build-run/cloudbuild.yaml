@@ -10,3 +10,5 @@ steps:
   args: ['run', 'deploy', 'cloud-run-deploy', '--image', 'gcr.io/$PROJECT_ID/build-run-image', '--region', 'us-central1', '--platform', 'managed', '--allow-unauthenticated']
 images:
 - gcr.io/$PROJECT_ID/build-run-image
+options:
+  logging: CLOUD_LOGGING_ONLY
